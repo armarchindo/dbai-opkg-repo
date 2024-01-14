@@ -11,10 +11,12 @@ Custom Repository for OpenWRT
 ### Package List
 | Packages | Description |
 | ---- | ---- |
+| [luci-app-cloudflared][] | Connection your OpenWrt with Cloudflared Zero Trust Tunnel via LuCI |
 | [luci-app-ipinfo][] | Shows public ip information in Overview LuCI with ifconfig.co |
 | [luci-theme-alpha][] | Luci theme for Official Openwrt and Alpha OS build ,based on bootstrap and material luCi theme refferences |
 
 
+[luci-app-cloudflared]: https://github.com/animegasan/luci-app-cloudflared
 [luci-app-ipinfo]: https://github.com/animegasan/luci-app-ipinfo
 [luci-theme-alpha]: https://github.com/derisamedia/luci-theme-alpha
  
