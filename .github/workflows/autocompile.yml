@@ -23,7 +23,7 @@ jobs:
       fail-fast: false
       matrix:
         release:
-          - 22.03.5
+          #- 22.03.5
           - 23.05.2
         arch:
           - x86_64
@@ -59,7 +59,7 @@ jobs:
           ARCH: ${{ matrix.arch }}-${{ matrix.release }}
           ARTIFACTS_DIR: ${{ github.workspace }}/artifacts
           FEED_DIR: ${{ github.workspace }}/feeds
-          PACKAGES: go ${{ steps.list_package.outputs.content }}
+          PACKAGES: ${{ steps.list_package.outputs.content }}
           IGNORE_ERRORS: y
           V: s
           INDEX: 1
@@ -90,15 +90,15 @@ jobs:
       - name: Moving artifact to releases
         shell: bash
         run: |
-          rm -rf releases/*
           mkdir -p releases 2>/dev/null
-          version=( 22.03.5 23.05.2 )
+          version=( 23.05.2 )
           archi=( x86_64 mips_24kc mipsel_24kc arm_cortex-a7_neon-vfpv4 aarch64_cortex-a53 aarch64_cortex-a72 aarch64_generic )
           for vr in ${version[*]} 
             do
               vers=$(echo $vr | sed 's/..$//')
               for arc in ${archi[*]} 
                 do
+                  rm -rf releases/$vers/packages/$arc
                   mkdir -p releases/$vers/packages/$arc
                   cp -rf openwrt_$vr\_$arc/* releases/$vers/packages/$arc
                 done
