@@ -1,1 +1,1 @@
-{"architecture": "arm_cortex-a7_neon-vfpv4", "packages":{"luci-app-ipinfo": "2.0.1-20240110", "luci-theme-alpha": "3.9.1-beta-9"}}
+{"architecture": "arm_cortex-a7_neon-vfpv4", "packages":{"cloudflared": "2024.1.2-1", "luci-app-cloudflared": "1.1", "luci-app-ipinfo": "1.1", "luci-theme-alpha": "3.9.1-beta-9"}}
