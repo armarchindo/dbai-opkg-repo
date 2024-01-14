@@ -12,6 +12,6 @@ PKG_MAINTAINER:=Hilman Maulana <hilman0.0maulana@gmail.com>
 PKG_VERSION:=1.1
 PKG_LICENSE:=Apache-2.0
 
-include ../../luci.mk
+include $(TOPDIR)/feeds/luci/luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
