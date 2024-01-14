@@ -1,1 +1,1 @@
-usign luci-theme-alpha luci-app-cloudflared
+usign luci-theme-alpha luci-app-cloudflared luci-app-ipinfo
