@@ -59,7 +59,7 @@ jobs:
           ARCH: ${{ matrix.arch }}-${{ matrix.release }}
           ARTIFACTS_DIR: ${{ github.workspace }}/artifacts
           FEED_DIR: ${{ github.workspace }}/feeds
-          PACKAGES: ${{ steps.list_package.outputs.content }}
+          PACKAGES: go ${{ steps.list_package.outputs.content }}
           IGNORE_ERRORS: y
           V: s
           INDEX: 1
