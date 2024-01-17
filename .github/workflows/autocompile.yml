@@ -6,8 +6,31 @@ name: AutoCompiler OpenWrt Packages
 on:
   push:
     branches:
-    - main
+      - main
+    paths-ignore:
+      - '.github/workflows/**'
+      - 'README.md'
     
+  workflow_dispatch:
+    inputs:
+      compile_pkg:
+        description: 'Compile packages (default : all packages on list_packages.txt)'
+        required: false
+        default: ''
+        type: string
+        
+      verbose:
+        description: 'Verbose (default : 0)'
+        required: false
+        default: '0'
+        type: string
+        
+      without_pages:
+        description: 'Dont deploy pages'
+        required: true
+        default: false
+        type: boolean
+        
 permissions:
   contents: read
   pages: write
@@ -17,7 +40,7 @@ jobs:
   build_ipk:
     permissions:
       contents: write
-    name: AutoCompiler OpenWrt Packages
+    name: AutoCompiler
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -41,6 +64,7 @@ jobs:
           ref: main
 
       - name: Reading Package 
+        if: inputs.compile_pkg == ''
         id: list_package
         uses: jaywcjlove/github-action-read-file@main
         with:
@@ -48,7 +72,7 @@ jobs:
           path: list_packages.txt
 
       - name: List Compiled Packages
-        run: echo "Compiled Packages | ${{ steps.list_package.outputs.content }}"
+        run: echo "Compiled Packages | ${{ steps.list_package.outputs.content }} ${{ inputs.compile_pkg }}"
         
       - name: Creating Directory
         run: mkdir artifacts
@@ -59,10 +83,9 @@ jobs:
           ARCH: ${{ matrix.arch }}-${{ matrix.release }}
           ARTIFACTS_DIR: ${{ github.workspace }}/artifacts
           FEED_DIR: ${{ github.workspace }}/feeds
-          PACKAGES: ${{ steps.list_package.outputs.content }}
-          IGNORE_ERRORS: y
-          V: s
+          PACKAGES: ${{ steps.list_package.outputs.content}} ${{ inputs.compile_pkg }}
           INDEX: 1
+          V: ${{ inputs.verbose }}
         
       - name: Delivering Package
         uses: actions/upload-artifact@v3
@@ -101,6 +124,7 @@ jobs:
                   rm -rf releases/$vers/packages/$arc
                   mkdir -p releases/$vers/packages/$arc
                   cp -rf openwrt_$vr\_$arc/* releases/$vers/packages/$arc
+                  rm -rf releases/$vers/packages/$arc/routing releases/$vers/packages/$arc/telephony
                 done
             done
           
@@ -122,6 +146,7 @@ jobs:
           
   build_pages:
     needs: push_packages
+    if: inputs.without_pages == 0 && !cancelled()
     name: Building pages
     permissions:
       contents: write
@@ -169,3 +194,18 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v1
         
+
+  clear_artifact:
+    needs: push_packages
+    name: Clearing Artifact
+    permissions:
+      actions: write
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          retain_days: 5
+          keep_minimum_runs: 2
+          
