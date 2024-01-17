@@ -1,1 +1,1 @@
-{"architecture": "mips_24kc", "packages":{"luci-app-ipinfo": "1.1", "luci-app-zerotier": "1.1", "luci-theme-alpha": "3.9.1-beta-9"}}
+{"architecture": "mips_24kc", "packages":{"cloudflared": "2024.1.2-1", "luci-app-cloudflared": "1.1", "luci-app-ipinfo": "1.1", "luci-app-zerotier": "1.1", "luci-theme-alpha": "3.9.1-beta-9"}}

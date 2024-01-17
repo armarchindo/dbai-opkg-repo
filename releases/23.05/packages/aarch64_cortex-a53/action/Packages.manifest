@@ -1,3 +1,42 @@
+Package: cloudflared
+Version: 2024.1.2-1
+Depends: libc, ca-bundle
+Source: /feed/cloudflared
+SourceName: cloudflared
+License: Apache-2.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1699969091
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: aarch64_cortex-a53
+Installed-Size: 8215061
+Filename: cloudflared_2024.1.2-1_aarch64_cortex-a53.ipk
+Size: 8184608
+SHA256sum: c31c4610c0c9aeb2ceaf48f8a72170325c11c6660667619f492688ebae63072b
+Description:  Contains the command-line client for Cloudflare Tunnel, a tunneling
+ daemon that proxies traffic from the Cloudflare network to your origins.
+ 
+ This daemon sits between Cloudflare network and your origin (e.g. a
+ webserver). Cloudflare attracts client requests and sends them to you
+ via this daemon, without requiring you to poke holes on your firewall
+ --- your origin can remain as closed as possible.
+
+Package: luci-app-cloudflared
+Version: 1.1
+Depends: libc, cloudflared
+Source: /feed/luci-app-cloudflared
+SourceName: luci-app-cloudflared
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1699969091
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 2666
+Filename: luci-app-cloudflared_1.1_all.ipk
+Size: 3498
+SHA256sum: a4abfe1196bbd29b945a13026a298faaab79d29a498d97f7c69dea9f98d3c3bc
+Description:  LuCI support for Cloudflared
+
 Package: luci-app-ipinfo
 Version: 1.1
 Depends: libc, curl
