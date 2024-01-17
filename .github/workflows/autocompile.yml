@@ -25,6 +25,12 @@ on:
         default: '0'
         type: string
         
+      versionx:
+        description: 'SDK Version ( 22.03.5 - 23.05.2 )'
+        required: false
+        default: '23.05.2'
+        type: string
+
       without_pages:
         description: 'Dont deploy pages'
         required: true
@@ -47,7 +53,7 @@ jobs:
       matrix:
         release:
           #- 22.03.5
-          - 23.05.2
+          - ${{ inputs.versionx }}
         arch:
           - x86_64
           - mips_24kc
@@ -114,7 +120,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p releases 2>/dev/null
-          version=( 23.05.2 )
+          version=( ${{ inputs.versionx }} )
           archi=( x86_64 mips_24kc mipsel_24kc arm_cortex-a7_neon-vfpv4 aarch64_cortex-a53 aarch64_cortex-a72 aarch64_generic )
           for vr in ${version[*]} 
             do
