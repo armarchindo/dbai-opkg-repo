@@ -1,3 +1,22 @@
+Package: bzip2
+Version: 1.0.8-1
+Depends: libc, libbz2-1.0
+Source: feeds/base/package/utils/bzip2
+SourceName: bzip2
+License: bzip2-1.0.8
+LicenseFiles: LICENSE
+Section: utils
+SourceDateEpoch: 1571482151
+CPE-ID: cpe:/a:bzip:bzip2
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: x86_64
+Installed-Size: 11659
+Filename: bzip2_1.0.8-1_x86_64.ipk
+Size: 12486
+SHA256sum: 112e5dc0424eb2c22f20a65ed5ebc4b79de0306c1b35621946ed6cc74a737844
+Description:  bzip2 is a freely available, patent free, high-quality
+ data compressor. This package provides the binary.
+
 Package: ca-bundle
 Version: 20230311-1
 Depends: libc
@@ -28,6 +47,95 @@ Size: 134559
 SHA256sum: afcf1dae32e6f4403fc82655d97c961a1cde40cf7ebc69052985679e099f1276
 Description:  System CA certificates
 
+Package: devlink
+Version: 6.3.0-1
+Depends: libc, libmnl0
+Source: feeds/base/package/network/utils/iproute2
+SourceName: devlink
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1683462718
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: x86_64
+Installed-Size: 46674
+Filename: devlink_6.3.0-1_x86_64.ipk
+Size: 47503
+SHA256sum: 80cf90f77cc50f3a1eb3c525ba2edbe26929e60b2abdafcc459b40082c781496
+Description:  Network devlink utility
+
+Package: genl
+Version: 6.3.0-1
+Depends: libc, libnl-tiny1, libmnl0
+Source: feeds/base/package/network/utils/iproute2
+SourceName: genl
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1683462718
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: x86_64
+Installed-Size: 7930
+Filename: genl_6.3.0-1_x86_64.ipk
+Size: 8719
+SHA256sum: 5870e35f1eaecfa3ae005b29134e099310df4e290708b8c26817c20205b72599
+Description:  General netlink utility frontend
+
+Package: ip-bridge
+Version: 6.3.0-1
+Depends: libc, libnl-tiny1, libmnl0
+Source: feeds/base/package/network/utils/iproute2
+SourceName: ip-bridge
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1683462718
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: x86_64
+Installed-Size: 36392
+Filename: ip-bridge_6.3.0-1_x86_64.ipk
+Size: 37177
+SHA256sum: c9cc339062a6ae9b3657513bd282a652fd48e97f8619e0019559f20d54cff9d7
+Description:  Bridge configuration utility from iproute2
+
+Package: ip-full
+Version: 6.3.0-1
+Depends: libc, libnl-tiny1, libbpf1, libmnl0
+Provides: ip
+Alternatives: 300:/sbin/ip:/usr/libexec/ip-full
+Source: feeds/base/package/network/utils/iproute2
+SourceName: ip-full
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1683462718
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: x86_64
+Installed-Size: 227464
+Filename: ip-full_6.3.0-1_x86_64.ipk
+Size: 228355
+SHA256sum: add101aacc24ad56ea3296b1558b9cf97162c73b21d62935317cf2b2ed83ff42
+Description:  Routing control utility (full)
+
+Package: ip-tiny
+Version: 6.3.0-1
+Depends: libc, libnl-tiny1, libmnl0
+Provides: ip
+Alternatives: 200:/sbin/ip:/usr/libexec/ip-tiny
+Source: feeds/base/package/network/utils/iproute2
+SourceName: ip-tiny
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1683462718
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: x86_64
+Installed-Size: 152005
+Filename: ip-tiny_6.3.0-1_x86_64.ipk
+Size: 152930
+SHA256sum: d693ceb1c317661e2aeb3a5ef28e72f39cf26ce182cfe105df90a1f96250bec8
+Description:  Routing control utility (minimal)
+
 Package: jshn
 Version: 2023-05-23-75a3b870-1
 Depends: libc, libjson-c5, libubox20230523, libblobmsg-json20230523
@@ -43,6 +151,42 @@ Filename: jshn_2023-05-23-75a3b870-1_x86_64.ipk
 Size: 7310
 SHA256sum: 603a99f54ae49d9e20c5b3b9a0c06ceaac7e9feb9112abf2ccfc16e9957eb0b8
 Description:  Library for parsing and generating JSON from shell scripts
+
+Package: jsonfilter
+Version: 2018-02-04-c7e938d6-1
+Depends: libc, libubox20230523, libjson-c5
+Source: feeds/base/package/utils/jsonfilter
+SourceName: jsonfilter
+License: ISC
+Section: base
+SourceDateEpoch: 1645878990
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: x86_64
+Installed-Size: 9719
+Filename: jsonfilter_2018-02-04-c7e938d6-1_x86_64.ipk
+Size: 10489
+SHA256sum: 5fda10cb1f63eda2ddf496ad907f579eee7ec64f6401a6ab54b25fc27d9fe8bd
+Description:  OpenWrt JSON filter utility
+
+Package: libasm1
+Version: 0.189-1
+Depends: libc, libelf1, libdw1
+Provides: libasm
+Source: feeds/base/package/libs/elfutils
+SourceName: libasm
+License: GPL-3.0-or-later
+LicenseFiles: COPYING COPYING-GPLV2 COPYING-LGPLV3
+Section: libs
+SourceDateEpoch: 1679419702
+ABIVersion: 1
+CPE-ID: cpe:/a:elfutils_project:elfutils
+Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
+Architecture: x86_64
+Installed-Size: 11420
+Filename: libasm1_0.189-1_x86_64.ipk
+Size: 12241
+SHA256sum: 1a4be2356a04f973572050e2a5dcafcec6ad35de89b66c312709708f2f0c6cfb
+Description:  ELF manipulation libraries (libasm)
 
 Package: libblobmsg-json20230523
 Version: 2023-05-23-75a3b870-1
@@ -61,6 +205,86 @@ Filename: libblobmsg-json20230523_2023-05-23-75a3b870-1_x86_64.ipk
 Size: 4518
 SHA256sum: 8a8a2e0f9fa8396316ddda72c4365dcd9304d53b2dd89c8d91df75c2d92dc5e3
 Description:  blobmsg <-> json conversion library
+
+Package: libbpf1
+Version: 1.2.2-1
+Depends: libc, libelf1
+Provides: libbpf
+Source: feeds/base/package/libs/libbpf
+SourceName: libbpf
+License: LGPL-2.1 OR BSD-2-Clause
+Section: libs
+SourceDateEpoch: 1695847021
+ABIVersion: 1
+CPE-ID: cpe:/a:libbpf_project:libbpf
+Maintainer: Tony Ambardar <itugrok@yahoo.com>
+Architecture: x86_64
+Installed-Size: 139777
+Filename: libbpf1_1.2.2-1_x86_64.ipk
+Size: 140650
+SHA256sum: 8ae6657d31d9d7b05bc5b6e8a76c24fd10a49055d6d2a3cbee3bc6c2cb44a845
+Description:  libbpf is a library for loading eBPF programs and reading and manipulating eBPF objects from user-space.
+
+Package: libbz2-1.0
+Version: 1.0.8-1
+Depends: libc
+Provides: libbz2
+Source: feeds/base/package/utils/bzip2
+SourceName: libbz2
+License: bzip2-1.0.8
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1571482151
+ABIVersion: -1.0
+CPE-ID: cpe:/a:bzip:bzip2
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: x86_64
+Installed-Size: 24147
+Filename: libbz2-1.0_1.0.8-1_x86_64.ipk
+Size: 24932
+SHA256sum: 8cc9ab2a316ee0f100441b5942137ab76d13c129ff38cc2edd6a439d66598c49
+Description:  bzip2 is a freely available, patent free, high-quality
+ data compressor. This packages provides libbz2 library.
+
+Package: libdw1
+Version: 0.189-1
+Depends: libc, libelf1, libbz2-1.0, musl-fts
+Provides: libdw
+Source: feeds/base/package/libs/elfutils
+SourceName: libdw
+License: GPL-3.0-or-later
+LicenseFiles: COPYING COPYING-GPLV2 COPYING-LGPLV3
+Section: libs
+SourceDateEpoch: 1679419702
+ABIVersion: 1
+CPE-ID: cpe:/a:elfutils_project:elfutils
+Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
+Architecture: x86_64
+Installed-Size: 217100
+Filename: libdw1_0.189-1_x86_64.ipk
+Size: 216737
+SHA256sum: a9d35884e4fa3fe65f69ef091d5ff01e242e03e548452de443d45bf4502ddc34
+Description:  ELF manipulation libraries (libdw)
+
+Package: libelf1
+Version: 0.189-1
+Depends: libc, zlib
+Provides: libelf, libelf11
+Source: feeds/base/package/libs/elfutils
+SourceName: libelf
+License: GPL-3.0-or-later
+LicenseFiles: COPYING COPYING-GPLV2 COPYING-LGPLV3
+Section: libs
+SourceDateEpoch: 1679419702
+ABIVersion: 1
+CPE-ID: cpe:/a:elfutils_project:elfutils
+Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
+Architecture: x86_64
+Installed-Size: 40317
+Filename: libelf1_0.189-1_x86_64.ipk
+Size: 41134
+SHA256sum: 19b634ade69c4ff00c25ee0bbeab0e63fe9a2bc9b2f6907499bd215e4a0f9c77
+Description:  ELF manipulation libraries (libelf)
 
 Package: libjson-c5
 Version: 0.16-3
@@ -144,6 +368,84 @@ Description:  The aim of the mbedtls project is to provide a quality, open-sourc
  cryptographic library written in C and targeted at embedded systems.
  This package contains the mbedtls library.
 
+Package: libmnl0
+Version: 1.0.5-1
+Depends: libc
+Provides: libmnl
+Source: feeds/base/package/libs/libmnl
+SourceName: libmnl
+License: LGPL-2.1+
+Section: libs
+SourceDateEpoch: 1662478604
+ABIVersion: 0
+CPE-ID: cpe:/a:netfilter:libmnl
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: x86_64
+Installed-Size: 6970
+Filename: libmnl0_1.0.5-1_x86_64.ipk
+Size: 8242
+SHA256sum: 59b64233e9e10954f337ea246ca1f394ed9fb73e1749ebf0552e663a4f2620db
+Description:  libmnl is a minimalistic user-space library oriented to Netlink developers.
+ There are a lot of common tasks in parsing, validating, constructing of
+ both the Netlink header and TLVs that are repetitive and easy to get wrong.
+ This library aims to provide simple helpers that allows you to re-use code
+ and to avoid re-inventing the wheel. The main features of this library are:
+ .
+ * Small: the shared library requires around 30KB for an x86-based computer.
+ .
+ * Simple: this library avoids complexity and elaborated abstractions that
+ tend to hide Netlink details.
+ .
+ * Easy to use: the library simplifies the work for Netlink-wise developers.
+ It provides functions to make socket handling, message building, validating,
+ parsing and sequence tracking, easier.
+ .
+ * Easy to re-use: you can use the library to build your own abstraction layer
+ on top of this library.
+ .
+ * Decoupling: the interdependency of the main bricks that compose the library
+ is reduced, i.e. the library provides many helpers, but the programmer is not
+ forced to use them.
+
+Package: libnftnl11
+Version: 1.2.6-1
+Depends: libc, libmnl0
+Provides: libnftnl
+Source: feeds/base/package/libs/libnftnl
+SourceName: libnftnl
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Section: libs
+SourceDateEpoch: 1689833051
+ABIVersion: 11
+CPE-ID: cpe:/a:netfilter:libnftnl
+Maintainer: Steven Barth <steven@midlink.org>
+Architecture: x86_64
+Installed-Size: 64613
+Filename: libnftnl11_1.2.6-1_x86_64.ipk
+Size: 65416
+SHA256sum: ba8de21cdc885fab508d9701f2939629abe5e067332c0ec8d8c3b9b2ca21167e
+Description:  libnftnl is a userspace library providing a low-level netlink
+ programming interface (API) to the in-kernel nf_tables subsystem.
+
+Package: libnl-tiny1
+Version: 2023-07-27-bc92a280-1
+Depends: libc
+Provides: libnl-tiny
+Source: feeds/base/package/libs/libnl-tiny
+SourceName: libnl-tiny
+License: LGPL-2.1
+Section: libs
+SourceDateEpoch: 1690452362
+ABIVersion: 1
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 15475
+Filename: libnl-tiny1_2023-07-27-bc92a280-1_x86_64.ipk
+Size: 16247
+SHA256sum: a85dedaadc00ee9b32f9434589db5e145faaa07646946ddb1164bfa7f862243e
+Description:  This package contains a stripped down version of libnl
+
 Package: libubox-lua
 Version: 2023-05-23-75a3b870-1
 Depends: libc, libubox20230523, liblua5.1.5
@@ -177,6 +479,92 @@ Filename: libubox20230523_2023-05-23-75a3b870-1_x86_64.ipk
 Size: 22659
 SHA256sum: c8002bf2e4ef7fffc7799fa7d455ba5ead41db520b64cc893a35de30217fe0ce
 Description:  Basic utility library
+
+Package: libubus-lua
+Version: 2023-06-05-f787c97b-1
+Depends: libc, libubus20230605, liblua5.1.5
+Source: feeds/base/package/system/ubus
+SourceName: libubus-lua
+License: LGPL-2.1
+Section: libs
+SourceDateEpoch: 1695039918
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 7110
+Filename: libubus-lua_2023-06-05-f787c97b-1_x86_64.ipk
+Size: 7894
+SHA256sum: 5df46264b8ddb5f63dbda6f4eb7fbcbe10593fb77ce3e192a0e0c67bc92866fa
+Description:  Lua binding for the OpenWrt RPC client
+
+Package: libubus20230605
+Version: 2023-06-05-f787c97b-1
+Depends: libc, libubox20230523
+Provides: libubus
+Source: feeds/base/package/system/ubus
+SourceName: libubus
+License: LGPL-2.1
+Section: libs
+SourceDateEpoch: 1695039918
+ABIVersion: 20230605
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 10752
+Filename: libubus20230605_2023-06-05-f787c97b-1_x86_64.ipk
+Size: 11497
+SHA256sum: a6a7c1eb6f75180d9542886d386f33ba7b4a72c117f7cd990dbc3fe1a5b9985a
+Description:  OpenWrt RPC client library
+
+Package: libuci-lua
+Version: 2023-08-10-5781664d-1
+Depends: libc, libuci20130104, liblua5.1.5
+Source: feeds/base/package/system/uci
+SourceName: libuci-lua
+License: LGPL-2.1
+Section: libs
+SourceDateEpoch: 1691751214
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 6894
+Filename: libuci-lua_2023-08-10-5781664d-1_x86_64.ipk
+Size: 7665
+SHA256sum: 5b422029bcf0287e5bbb83ebf3c46c6f65f30fb441df11e8d6a5cd7d466c880b
+Description:  Lua plugin for UCI
+
+Package: libuci20130104
+Version: 2023-08-10-5781664d-1
+Depends: libc, libubox20230523
+Provides: libuci
+Source: feeds/base/package/system/uci
+SourceName: libuci
+License: LGPL-2.1
+Section: libs
+SourceDateEpoch: 1691751214
+ABIVersion: 20130104
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 17398
+Filename: libuci20130104_2023-08-10-5781664d-1_x86_64.ipk
+Size: 18190
+SHA256sum: fac8e9a4d7adc18768e456992be68606ff03e4948cb221ff3dd6c91ea226fc5c
+Description:  C library for the Unified Configuration Interface (UCI)
+
+Package: libucode20230711
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, libjson-c5
+Provides: libucode
+Source: feeds/base/package/utils/ucode
+SourceName: libucode
+License: ISC
+Section: libs
+SourceDateEpoch: 1701990653
+ABIVersion: 20230711
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: x86_64
+Installed-Size: 75367
+Filename: libucode20230711_2023-11-07-a6e75e02-1_x86_64.ipk
+Size: 76152
+SHA256sum: 5fc92b62644e669c5e5c442a9b829f4fa6580d3549d65ca24d859a711744791e
+Description:  The libucode package provides the shared runtime library for the ucode interpreter.
 
 Package: lua-examples
 Version: 5.1.5-10
@@ -261,6 +649,390 @@ Description:  The aim of the mbedtls project is to provide a quality, open-sourc
  This package contains mbedtls helper programs for private key and
  CSR generation (gen_key, cert_req)
 
+Package: musl-fts
+Version: 1.2.7-1
+Depends: libc, libpthread
+Source: feeds/base/package/libs/musl-fts
+SourceName: musl-fts
+License: LGPL-2.1
+LicenseFiles: COPYING AUTHORS
+Section: libs
+SourceDateEpoch: 1648384693
+Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
+Architecture: x86_64
+Installed-Size: 4924
+Filename: musl-fts_1.2.7-1_x86_64.ipk
+Size: 5703
+SHA256sum: e98f5f5cbd94c96031501e7284f1e542cbd282d7adc09842c8d173a5d73a94d3
+Description:  The musl-fts package implements the fts(3) functions fts_open, fts_read, fts_children, fts_set and fts_close, which are missing in musl libc.
+
+Package: nstat
+Version: 6.3.0-1
+Depends: libc, libnl-tiny1, libmnl0
+Source: feeds/base/package/network/utils/iproute2
+SourceName: nstat
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1683462718
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: x86_64
+Installed-Size: 7213
+Filename: nstat_6.3.0-1_x86_64.ipk
+Size: 7999
+SHA256sum: f56790a8b2f4eebc6aef201017041fdc0d9c5814fe8ffebe7602f327ed0ab934
+Description:  Network statistics utility
+
+Package: rdma
+Version: 6.3.0-1
+Depends: libc, libmnl0
+Source: feeds/base/package/network/utils/iproute2
+SourceName: rdma
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1683462718
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: x86_64
+Installed-Size: 27223
+Filename: rdma_6.3.0-1_x86_64.ipk
+Size: 28024
+SHA256sum: 85e6479b482c841ed282962f2a06b44de25e41531fe6ba85f719e436c5aa98bd
+Description:  Network rdma utility
+
+Package: ss
+Version: 6.3.0-1
+Depends: libc, libnl-tiny1, libmnl0, kmod-netlink-diag
+Source: feeds/base/package/network/utils/iproute2
+SourceName: ss
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1683462718
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: x86_64
+Installed-Size: 42675
+Filename: ss_6.3.0-1_x86_64.ipk
+Size: 43525
+SHA256sum: 9ffe2ce6cb7143a1668bdbd16fd078787bfd54f6cb7dcc5a2ff04c06012ac1d9
+Description:  Socket statistics utility
+
+Package: tc-bpf
+Version: 6.3.0-1
+Depends: libc, kmod-sched-core, libmnl0, libbpf1
+Provides: tc
+Alternatives: 300:/sbin/tc:/usr/libexec/tc-bpf
+Source: feeds/base/package/network/utils/iproute2
+SourceName: tc-bpf
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1683462718
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: x86_64
+Installed-Size: 177705
+Filename: tc-bpf_6.3.0-1_x86_64.ipk
+Size: 178538
+SHA256sum: c4287e611c189b917490c29fc1434d88f5a49630ddaf821c7ac41cc550018063
+Description:  Traffic control utility (bpf)
+
+Package: tc-full
+Version: 6.3.0-1
+Depends: libc, kmod-sched-core, libmnl0, libbpf1, libxtables12, tc-mod-iptables
+Provides: tc
+Alternatives: 400:/sbin/tc:/usr/libexec/tc-full
+Source: feeds/base/package/network/utils/iproute2
+SourceName: tc-full
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1683462718
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: x86_64
+Installed-Size: 177572
+Filename: tc-full_6.3.0-1_x86_64.ipk
+Size: 178432
+SHA256sum: 52ffbc877b60d13543101eb98ec735bda6414d9c8c372000eef349832babdb40
+Description:  Traffic control utility (full)
+
+Package: tc-mod-iptables
+Version: 6.3.0-1
+Depends: libc, libxtables12, libbpf1
+Source: feeds/base/package/network/utils/iproute2
+SourceName: tc-mod-iptables
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1683462718
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: x86_64
+Installed-Size: 3282
+Filename: tc-mod-iptables_6.3.0-1_x86_64.ipk
+Size: 4063
+SHA256sum: cfe5363c3d3a1575d20643544768cdab36c5163caa271eb289163cae525859ee
+Description:  Traffic control module - iptables action
+
+Package: tc-tiny
+Version: 6.3.0-1
+Depends: libc, kmod-sched-core, libmnl0
+Provides: tc
+Alternatives: 200:/sbin/tc:/usr/libexec/tc-tiny
+Source: feeds/base/package/network/utils/iproute2
+SourceName: tc-tiny
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1683462718
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: x86_64
+Installed-Size: 167835
+Filename: tc-tiny_6.3.0-1_x86_64.ipk
+Size: 168736
+SHA256sum: 8adc6f70c47e522b09dd9542821956a08b2cc9651a3bf1719f478d4b03569313
+Description:  Traffic control utility (minimal)
+
+Package: ubus
+Version: 2023-06-05-f787c97b-1
+Depends: libc, libubus20230605, libblobmsg-json20230523, ubusd
+Source: feeds/base/package/system/ubus
+SourceName: ubus
+License: LGPL-2.1
+Section: base
+SourceDateEpoch: 1695039918
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 6153
+Filename: ubus_2023-06-05-f787c97b-1_x86_64.ipk
+Size: 6955
+SHA256sum: eb13be6e83bc5b5a97504505daea718f26ed563c30efdd35ed92329b0e5cf433
+Description:  OpenWrt RPC client utility
+
+Package: ubusd
+Version: 2023-06-05-f787c97b-1
+Depends: libc, libubox20230523, libblobmsg-json20230523
+Source: feeds/base/package/system/ubus
+SourceName: ubusd
+License: LGPL-2.1
+Section: base
+Require-User: ubus=81:ubus=81
+SourceDateEpoch: 1695039918
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 12546
+Filename: ubusd_2023-06-05-f787c97b-1_x86_64.ipk
+Size: 13324
+SHA256sum: ae15110278f8390c3694d17003b06d8152c824a36360b115d11bc1b7945ab223
+Description:  OpenWrt RPC daemon
+
+Package: uci
+Version: 2023-08-10-5781664d-1
+Depends: libc, libuci20130104
+Source: feeds/base/package/system/uci
+SourceName: uci
+License: LGPL-2.1
+Section: base
+SourceDateEpoch: 1691751214
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 6989
+Filename: uci_2023-08-10-5781664d-1_x86_64.ipk
+Size: 7797
+SHA256sum: 3517f5ef1e73a8fda26b040d8df5ddf3d7b1a74e27c04cf5f5b81aecd9260fb5
+Description:  Utility for the Unified Configuration Interface (UCI)
+
+Package: ucode-mod-debug
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, ucode, libubox20230523, libucode20230711
+Source: feeds/base/package/utils/ucode
+SourceName: ucode-mod-debug
+License: ISC
+Section: lang
+SourceDateEpoch: 1701990653
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: x86_64
+Installed-Size: 8244
+Filename: ucode-mod-debug_2023-11-07-a6e75e02-1_x86_64.ipk
+Size: 9058
+SHA256sum: 02679064b06b7390222eab031145300ad6ace90618b67285cca42848cc3f21b1
+Description:  The debug plugin module provides runtime debugging and introspection facilities.
+
+Package: ucode-mod-fs
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, ucode
+Source: feeds/base/package/utils/ucode
+SourceName: ucode-mod-fs
+License: ISC
+Section: lang
+SourceDateEpoch: 1701990653
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: x86_64
+Installed-Size: 9983
+Filename: ucode-mod-fs_2023-11-07-a6e75e02-1_x86_64.ipk
+Size: 10742
+SHA256sum: 5befa4fb3b7db85acc5251222dacf3a502f0d170a8bbc8c06904e24aa4d016d9
+Description:  The filesystem plugin module allows interaction with the local file system.
+
+Package: ucode-mod-log
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, ucode, libubox20230523
+Source: feeds/base/package/utils/ucode
+SourceName: ucode-mod-log
+License: ISC
+Section: lang
+SourceDateEpoch: 1701990653
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: x86_64
+Installed-Size: 4393
+Filename: ucode-mod-log_2023-11-07-a6e75e02-1_x86_64.ipk
+Size: 5172
+SHA256sum: ad184f433ea3589b25aa92c2c68a4395df3528aa1836af0d3662b50cf2d280a9
+Description:  The log plugin module provides access to the syslog and libubox ulog APIs.
+
+Package: ucode-mod-math
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, ucode
+Source: feeds/base/package/utils/ucode
+SourceName: ucode-mod-math
+License: ISC
+Section: lang
+SourceDateEpoch: 1701990653
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: x86_64
+Installed-Size: 2510
+Filename: ucode-mod-math_2023-11-07-a6e75e02-1_x86_64.ipk
+Size: 3279
+SHA256sum: ced16b9ccc8ffb411b348f12b3c6072a21a7b739e1fe2a3a2de1ed9bbb8cc39a
+Description:  The math plugin provides access to various <math.h> procedures.
+
+Package: ucode-mod-nl80211
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, ucode, libnl-tiny1, libubox20230523
+Source: feeds/base/package/utils/ucode
+SourceName: ucode-mod-nl80211
+License: ISC
+Section: lang
+SourceDateEpoch: 1701990653
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: x86_64
+Installed-Size: 21433
+Filename: ucode-mod-nl80211_2023-11-07-a6e75e02-1_x86_64.ipk
+Size: 22180
+SHA256sum: 6ac2d8c9145ca3a1e31b4f24b76c99e555aff358872cec61a61c396f51a33669
+Description:  The nl80211 plugin provides access to the Linux wireless 802.11 netlink API.
+
+Package: ucode-mod-resolv
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, ucode
+Source: feeds/base/package/utils/ucode
+SourceName: ucode-mod-resolv
+License: ISC
+Section: lang
+SourceDateEpoch: 1701990653
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: x86_64
+Installed-Size: 7628
+Filename: ucode-mod-resolv_2023-11-07-a6e75e02-1_x86_64.ipk
+Size: 8409
+SHA256sum: c7b7409f3dfd807094147f66af0c417b8c127547df759631b2f20045b3781676
+Description:  The resolv plugin implements simple DNS resolving.
+
+Package: ucode-mod-rtnl
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, ucode, libnl-tiny1, libubox20230523
+Source: feeds/base/package/utils/ucode
+SourceName: ucode-mod-rtnl
+License: ISC
+Section: lang
+SourceDateEpoch: 1701990653
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: x86_64
+Installed-Size: 28673
+Filename: ucode-mod-rtnl_2023-11-07-a6e75e02-1_x86_64.ipk
+Size: 29347
+SHA256sum: 546badd007af62da356fc42b172f5e8a7d70f0a8100d2fa90e6dbc676b6cde8c
+Description:  The rtnl plugin provides access to the Linux routing netlink API.
+
+Package: ucode-mod-struct
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, ucode
+Source: feeds/base/package/utils/ucode
+SourceName: ucode-mod-struct
+License: ISC
+Section: lang
+SourceDateEpoch: 1701990653
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: x86_64
+Installed-Size: 9797
+Filename: ucode-mod-struct_2023-11-07-a6e75e02-1_x86_64.ipk
+Size: 10564
+SHA256sum: d8dba23631ca902a2d0823526b8d69fcd61b54248a9a15bf8b9483adacae5d43
+Description:  The struct plugin implements Python 3 compatible struct.pack/unpack functionality.
+
+Package: ucode-mod-ubus
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, ucode, libubus20230605, libblobmsg-json20230523
+Source: feeds/base/package/utils/ucode
+SourceName: ucode-mod-ubus
+License: ISC
+Section: lang
+SourceDateEpoch: 1701990653
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: x86_64
+Installed-Size: 14279
+Filename: ucode-mod-ubus_2023-11-07-a6e75e02-1_x86_64.ipk
+Size: 15025
+SHA256sum: 5712ceb9e4ecc9b078d9288f684423428c49091f20057dc59aa2a31b6282471b
+Description:  The ubus module allows ucode template scripts to enumerate and invoke ubus procedures.
+
+Package: ucode-mod-uci
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, ucode, libuci20130104
+Source: feeds/base/package/utils/ucode
+SourceName: ucode-mod-uci
+License: ISC
+Section: lang
+SourceDateEpoch: 1701990653
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: x86_64
+Installed-Size: 7028
+Filename: ucode-mod-uci_2023-11-07-a6e75e02-1_x86_64.ipk
+Size: 7823
+SHA256sum: d9170b7acce63e237d561cf1b405d88d30f4691071c6091c10e5ad11fd401c6b
+Description:  The uci module allows templates to read and modify uci configuration.
+
+Package: ucode-mod-uloop
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, ucode, libubox20230523
+Source: feeds/base/package/utils/ucode
+SourceName: ucode-mod-uloop
+License: ISC
+Section: lang
+SourceDateEpoch: 1701990653
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: x86_64
+Installed-Size: 7913
+Filename: ucode-mod-uloop_2023-11-07-a6e75e02-1_x86_64.ipk
+Size: 8723
+SHA256sum: 49c7ae48160ca591662753a4fc6a3fe80a7045e476da23babdf1cbd9d18e9df6
+Description:  The uloop module allows ucode scripts to interact with OpenWrt uloop event loop implementation.
+
+Package: ucode
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, libucode20230711
+Source: feeds/base/package/utils/ucode
+SourceName: ucode
+License: ISC
+Section: lang
+SourceDateEpoch: 1701990653
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: x86_64
+Installed-Size: 6194
+Filename: ucode_2023-11-07-a6e75e02-1_x86_64.ipk
+Size: 7013
+SHA256sum: e571bf0837e6bfa2bca501972791d4ff5234589d77ffe0e151c034fc85b80c9c
+Description:  ucode is a tiny script interpreter featuring an ECMAScript oriented
+ script language and Jinja-inspired templating.
+
 Package: usign
 Version: 2020-05-23-f1f65026-1
 Depends: libc, libubox20230523
@@ -276,4 +1048,40 @@ Filename: usign_2020-05-23-f1f65026-1_x86_64.ipk
 Size: 12497
 SHA256sum: 5d8d6e81c41810e8dd08feefec4750d075e09fca413fd9bedc93913e2ef8e259
 Description:  OpenWrt signature verification utility
+
+Package: zlib-dev
+Version: 1.2.13-1
+Depends: libc, zlib
+Source: feeds/base/package/libs/zlib
+SourceName: zlib-dev
+License: Zlib
+LicenseFiles: README
+Section: devel
+SourceDateEpoch: 1684402529
+CPE-ID: cpe:/a:gnu:zlib
+Architecture: x86_64
+Installed-Size: 79899
+Filename: zlib-dev_1.2.13-1_x86_64.ipk
+Size: 80765
+SHA256sum: a2efdb1b39ddffae84624d03099434646bf1cd56eafab25b979998aab17abfb6
+Description:  zlib is a lossless data-compression library.
+ This package includes the development support files.
+
+Package: zlib
+Version: 1.2.13-1
+Depends: libc
+Source: feeds/base/package/libs/zlib
+SourceName: zlib
+License: Zlib
+LicenseFiles: README
+Section: libs
+SourceDateEpoch: 1684402529
+CPE-ID: cpe:/a:gnu:zlib
+Architecture: x86_64
+Installed-Size: 43449
+Filename: zlib_1.2.13-1_x86_64.ipk
+Size: 44233
+SHA256sum: ce050be521689ec57cf6b57fb05bd73b7307e3ea089ab489004559d5fa492b05
+Description:  zlib is a lossless data-compression library.
+ This package includes the shared library.
 

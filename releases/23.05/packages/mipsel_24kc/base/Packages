@@ -1,3 +1,17 @@
+Package: bzip2
+Version: 1.0.8-1
+Depends: libc, libbz2-1.0
+License: bzip2-1.0.8
+Section: utils
+CPE-ID: cpe:/a:bzip:bzip2
+Architecture: mipsel_24kc
+Installed-Size: 11540
+Filename: bzip2_1.0.8-1_mipsel_24kc.ipk
+Size: 12338
+SHA256sum: 4664094b079d048699ee9bee355f14360f83f8a4c2459d6b0fec2379cbac6b2d
+Description:  bzip2 is a freely available, patent free, high-quality
+ data compressor. This package provides the binary.
+
 Package: ca-bundle
 Version: 20230311-1
 Depends: libc
@@ -22,6 +36,75 @@ Size: 134559
 SHA256sum: afcf1dae32e6f4403fc82655d97c961a1cde40cf7ebc69052985679e099f1276
 Description:  System CA certificates
 
+Package: devlink
+Version: 6.3.0-1
+Depends: libc, libmnl0
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Architecture: mipsel_24kc
+Installed-Size: 36226
+Filename: devlink_6.3.0-1_mipsel_24kc.ipk
+Size: 36702
+SHA256sum: 423104f403a0d671b94a05946d6cfe1534a633f7988588753e14285893c1eeb5
+Description:  Network devlink utility
+
+Package: genl
+Version: 6.3.0-1
+Depends: libc, libnl-tiny1, libmnl0
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Architecture: mipsel_24kc
+Installed-Size: 6989
+Filename: genl_6.3.0-1_mipsel_24kc.ipk
+Size: 7610
+SHA256sum: 0cf20ef434c50dccc9e0b5a8082c0416314ff80d206c0fba96197db5c5749cf9
+Description:  General netlink utility frontend
+
+Package: ip-bridge
+Version: 6.3.0-1
+Depends: libc, libnl-tiny1, libmnl0
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Architecture: mipsel_24kc
+Installed-Size: 29072
+Filename: ip-bridge_6.3.0-1_mipsel_24kc.ipk
+Size: 29799
+SHA256sum: 2fd2b1cfc996a9c4ee8038dfce4d62d77ddc88c57540b5a9e7527ac650330681
+Description:  Bridge configuration utility from iproute2
+
+Package: ip-full
+Version: 6.3.0-1
+Depends: libc, libnl-tiny1, libbpf1, libmnl0
+Provides: ip
+Alternatives: 300:/sbin/ip:/usr/libexec/ip-full
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Architecture: mipsel_24kc
+Installed-Size: 186105
+Filename: ip-full_6.3.0-1_mipsel_24kc.ipk
+Size: 186773
+SHA256sum: b237637836c1c428ebbfe40633eebe701b4429cfc874177c988b8a1a6c810e33
+Description:  Routing control utility (full)
+
+Package: ip-tiny
+Version: 6.3.0-1
+Depends: libc, libnl-tiny1, libmnl0
+Provides: ip
+Alternatives: 200:/sbin/ip:/usr/libexec/ip-tiny
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Architecture: mipsel_24kc
+Installed-Size: 125240
+Filename: ip-tiny_6.3.0-1_mipsel_24kc.ipk
+Size: 125958
+SHA256sum: d265b60d07e5851d91e5ef5485c84a38d110ba4357c2403f683de881ace51c50
+Description:  Routing control utility (minimal)
+
 Package: jshn
 Version: 2023-05-23-75a3b870-1
 Depends: libc, libjson-c5, libubox20230523, libblobmsg-json20230523
@@ -33,6 +116,33 @@ Filename: jshn_2023-05-23-75a3b870-1_mipsel_24kc.ipk
 Size: 6839
 SHA256sum: 5fbd1c9f1937c7bf445dc089c3eee64e162ec94788a3b538475346ee346fdee3
 Description:  Library for parsing and generating JSON from shell scripts
+
+Package: jsonfilter
+Version: 2018-02-04-c7e938d6-1
+Depends: libc, libubox20230523, libjson-c5
+License: ISC
+Section: base
+Architecture: mipsel_24kc
+Installed-Size: 8337
+Filename: jsonfilter_2018-02-04-c7e938d6-1_mipsel_24kc.ipk
+Size: 8934
+SHA256sum: 14e62c1876257f26e65e1d35a27f1c1beea4c00cd732feff230c6cd03f514a2f
+Description:  OpenWrt JSON filter utility
+
+Package: libasm1
+Version: 0.189-1
+Depends: libc, libelf1, libdw1
+Provides: libasm
+License: GPL-3.0-or-later
+Section: libs
+ABIVersion: 1
+CPE-ID: cpe:/a:elfutils_project:elfutils
+Architecture: mipsel_24kc
+Installed-Size: 10763
+Filename: libasm1_0.189-1_mipsel_24kc.ipk
+Size: 11448
+SHA256sum: 567a732ea96b2f85b0471893a8fa12e2802a4c7f81ef997712d909251a1a1cf4
+Description:  ELF manipulation libraries (libasm)
 
 Package: libblobmsg-json20230523
 Version: 2023-05-23-75a3b870-1
@@ -47,6 +157,67 @@ Filename: libblobmsg-json20230523_2023-05-23-75a3b870-1_mipsel_24kc.ipk
 Size: 4665
 SHA256sum: 599d4d802b508fd8f4f9ef727039bf0c145de144d06238ff08995c5ac5f0a90a
 Description:  blobmsg <-> json conversion library
+
+Package: libbpf1
+Version: 1.2.2-1
+Depends: libc, libelf1
+Provides: libbpf
+License: LGPL-2.1 OR BSD-2-Clause
+Section: libs
+ABIVersion: 1
+CPE-ID: cpe:/a:libbpf_project:libbpf
+Architecture: mipsel_24kc
+Installed-Size: 142699
+Filename: libbpf1_1.2.2-1_mipsel_24kc.ipk
+Size: 143375
+SHA256sum: 64329f90cd7d9875c9ffff5edf1f40dc61384a0eb87da0b60f408cd8208c6941
+Description:  libbpf is a library for loading eBPF programs and reading and manipulating eBPF objects from user-space.
+
+Package: libbz2-1.0
+Version: 1.0.8-1
+Depends: libc
+Provides: libbz2
+License: bzip2-1.0.8
+Section: libs
+ABIVersion: -1.0
+CPE-ID: cpe:/a:bzip:bzip2
+Architecture: mipsel_24kc
+Installed-Size: 23090
+Filename: libbz2-1.0_1.0.8-1_mipsel_24kc.ipk
+Size: 23742
+SHA256sum: 3155e7ec72477022dd88eb815794b5bd55447e17db36b8f9e0ebe0bceb812509
+Description:  bzip2 is a freely available, patent free, high-quality
+ data compressor. This packages provides libbz2 library.
+
+Package: libdw1
+Version: 0.189-1
+Depends: libc, libelf1, libbz2-1.0, musl-fts
+Provides: libdw
+License: GPL-3.0-or-later
+Section: libs
+ABIVersion: 1
+CPE-ID: cpe:/a:elfutils_project:elfutils
+Architecture: mipsel_24kc
+Installed-Size: 204261
+Filename: libdw1_0.189-1_mipsel_24kc.ipk
+Size: 203573
+SHA256sum: f937edd87a378dd58bb967057b4975a50b86f2bbdc6bb8f97561b56f1a1487b6
+Description:  ELF manipulation libraries (libdw)
+
+Package: libelf1
+Version: 0.189-1
+Depends: libc, zlib
+Provides: libelf, libelf11
+License: GPL-3.0-or-later
+Section: libs
+ABIVersion: 1
+CPE-ID: cpe:/a:elfutils_project:elfutils
+Architecture: mipsel_24kc
+Installed-Size: 38024
+Filename: libelf1_0.189-1_mipsel_24kc.ipk
+Size: 38631
+SHA256sum: 20102fe06522a9f3b3f55d776a3348c4f94ce8431e14b595d31f683b309f2805
+Description:  ELF manipulation libraries (libelf)
 
 Package: libjson-c5
 Version: 0.16-3
@@ -112,6 +283,71 @@ Description:  The aim of the mbedtls project is to provide a quality, open-sourc
  cryptographic library written in C and targeted at embedded systems.
  This package contains the mbedtls library.
 
+Package: libmnl0
+Version: 1.0.5-1
+Depends: libc
+Provides: libmnl
+License: LGPL-2.1+
+Section: libs
+ABIVersion: 0
+CPE-ID: cpe:/a:netfilter:libmnl
+Architecture: mipsel_24kc
+Installed-Size: 5310
+Filename: libmnl0_1.0.5-1_mipsel_24kc.ipk
+Size: 6422
+SHA256sum: e1a913bc71a222c92cf17c334742f0c186a1f9239d3bb87554076a78d0926155
+Description:  libmnl is a minimalistic user-space library oriented to Netlink developers.
+ There are a lot of common tasks in parsing, validating, constructing of
+ both the Netlink header and TLVs that are repetitive and easy to get wrong.
+ This library aims to provide simple helpers that allows you to re-use code
+ and to avoid re-inventing the wheel. The main features of this library are:
+ .
+ * Small: the shared library requires around 30KB for an x86-based computer.
+ .
+ * Simple: this library avoids complexity and elaborated abstractions that
+ tend to hide Netlink details.
+ .
+ * Easy to use: the library simplifies the work for Netlink-wise developers.
+ It provides functions to make socket handling, message building, validating,
+ parsing and sequence tracking, easier.
+ .
+ * Easy to re-use: you can use the library to build your own abstraction layer
+ on top of this library.
+ .
+ * Decoupling: the interdependency of the main bricks that compose the library
+ is reduced, i.e. the library provides many helpers, but the programmer is not
+ forced to use them.
+
+Package: libnftnl11
+Version: 1.2.6-1
+Depends: libc, libmnl0
+Provides: libnftnl
+License: GPL-2.0-or-later
+Section: libs
+ABIVersion: 11
+CPE-ID: cpe:/a:netfilter:libnftnl
+Architecture: mipsel_24kc
+Installed-Size: 46889
+Filename: libnftnl11_1.2.6-1_mipsel_24kc.ipk
+Size: 47657
+SHA256sum: 5d8b22ffd90388e5ccafd182c2378abfa0967b151601a58ba4612f0cde54149b
+Description:  libnftnl is a userspace library providing a low-level netlink
+ programming interface (API) to the in-kernel nf_tables subsystem.
+
+Package: libnl-tiny1
+Version: 2023-07-27-bc92a280-1
+Depends: libc
+Provides: libnl-tiny
+License: LGPL-2.1
+Section: libs
+ABIVersion: 1
+Architecture: mipsel_24kc
+Installed-Size: 12373
+Filename: libnl-tiny1_2023-07-27-bc92a280-1_mipsel_24kc.ipk
+Size: 12993
+SHA256sum: 17b7d06dd336ff5493ffce59288899eddd886dc448285c3d9898818797cc5683
+Description:  This package contains a stripped down version of libnl
+
 Package: libubox-lua
 Version: 2023-05-23-75a3b870-1
 Depends: libc, libubox20230523, liblua5.1.5
@@ -137,6 +373,72 @@ Filename: libubox20230523_2023-05-23-75a3b870-1_mipsel_24kc.ipk
 Size: 20012
 SHA256sum: dbde24e9f4387e1c1758dd4e2baae56b0b78245b57800a4bb45be74e95bd78a4
 Description:  Basic utility library
+
+Package: libubus-lua
+Version: 2023-06-05-f787c97b-1
+Depends: libc, libubus20230605, liblua5.1.5
+License: LGPL-2.1
+Section: libs
+Architecture: mipsel_24kc
+Installed-Size: 6675
+Filename: libubus-lua_2023-06-05-f787c97b-1_mipsel_24kc.ipk
+Size: 7414
+SHA256sum: edaaba2a7dfb26884455ce6cfc578afcb0015e7333dd07d8d4a57867178d6ba4
+Description:  Lua binding for the OpenWrt RPC client
+
+Package: libubus20230605
+Version: 2023-06-05-f787c97b-1
+Depends: libc, libubox20230523
+Provides: libubus
+License: LGPL-2.1
+Section: libs
+ABIVersion: 20230605
+Architecture: mipsel_24kc
+Installed-Size: 9388
+Filename: libubus20230605_2023-06-05-f787c97b-1_mipsel_24kc.ipk
+Size: 10006
+SHA256sum: e84e556f1eea64492e649b2b375cf570a791c5dc6c1119763edc07c93de626bb
+Description:  OpenWrt RPC client library
+
+Package: libuci-lua
+Version: 2023-08-10-5781664d-1
+Depends: libc, libuci20130104, liblua5.1.5
+License: LGPL-2.1
+Section: libs
+Architecture: mipsel_24kc
+Installed-Size: 5902
+Filename: libuci-lua_2023-08-10-5781664d-1_mipsel_24kc.ipk
+Size: 6613
+SHA256sum: dee59df50cc2369e43a101117cf3f7d6452ef12a7969425635e67f22e0ca4fbf
+Description:  Lua plugin for UCI
+
+Package: libuci20130104
+Version: 2023-08-10-5781664d-1
+Depends: libc, libubox20230523
+Provides: libuci
+License: LGPL-2.1
+Section: libs
+ABIVersion: 20130104
+Architecture: mipsel_24kc
+Installed-Size: 15202
+Filename: libuci20130104_2023-08-10-5781664d-1_mipsel_24kc.ipk
+Size: 15822
+SHA256sum: e43e213aab20907b8268dc8258cf6d40a6328486ccb968c08265278f98fe53d7
+Description:  C library for the Unified Configuration Interface (UCI)
+
+Package: libucode20230711
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, libjson-c5
+Provides: libucode
+License: ISC
+Section: libs
+ABIVersion: 20230711
+Architecture: mipsel_24kc
+Installed-Size: 68007
+Filename: libucode20230711_2023-11-07-a6e75e02-1_mipsel_24kc.ipk
+Size: 68422
+SHA256sum: 658416ab249e82564a17eb1996340b92b823c502226b1365bdb052f7237a8993
+Description:  The libucode package provides the shared runtime library for the ucode interpreter.
 
 Package: lua-examples
 Version: 5.1.5-10
@@ -202,6 +504,296 @@ Description:  The aim of the mbedtls project is to provide a quality, open-sourc
  This package contains mbedtls helper programs for private key and
  CSR generation (gen_key, cert_req)
 
+Package: musl-fts
+Version: 1.2.7-1
+Depends: libc, libpthread
+License: LGPL-2.1
+Section: libs
+Architecture: mipsel_24kc
+Installed-Size: 4531
+Filename: musl-fts_1.2.7-1_mipsel_24kc.ipk
+Size: 5201
+SHA256sum: 65ce8b0cfa830adc3a3fd2ace433ce285cd1ee2ad51c31c9899a7bc4df73f3e0
+Description:  The musl-fts package implements the fts(3) functions fts_open, fts_read, fts_children, fts_set and fts_close, which are missing in musl libc.
+
+Package: nstat
+Version: 6.3.0-1
+Depends: libc, libnl-tiny1, libmnl0
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Architecture: mipsel_24kc
+Installed-Size: 6871
+Filename: nstat_6.3.0-1_mipsel_24kc.ipk
+Size: 7490
+SHA256sum: 1407a8308f958882329d8b4a1984e11730f8347da6bc2f287ce38640db5abcf5
+Description:  Network statistics utility
+
+Package: rdma
+Version: 6.3.0-1
+Depends: libc, libmnl0
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Architecture: mipsel_24kc
+Installed-Size: 19560
+Filename: rdma_6.3.0-1_mipsel_24kc.ipk
+Size: 20240
+SHA256sum: 51786b8bbd4bafdc5ac6a463fa5340e515787017c2818c148fcc083aabbbd134
+Description:  Network rdma utility
+
+Package: ss
+Version: 6.3.0-1
+Depends: libc, libnl-tiny1, libmnl0, kmod-netlink-diag
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Architecture: mipsel_24kc
+Installed-Size: 36127
+Filename: ss_6.3.0-1_mipsel_24kc.ipk
+Size: 36949
+SHA256sum: 12317d7adc95d0be72f969233f08c49b6bc96b0bad7a2670cdddad21990fca0d
+Description:  Socket statistics utility
+
+Package: tc-bpf
+Version: 6.3.0-1
+Depends: libc, kmod-sched-core, libmnl0, libbpf1
+Provides: tc
+Alternatives: 300:/sbin/tc:/usr/libexec/tc-bpf
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Architecture: mipsel_24kc
+Installed-Size: 145663
+Filename: tc-bpf_6.3.0-1_mipsel_24kc.ipk
+Size: 146248
+SHA256sum: 5466ee765169e56888e6c60613e3adc440a7ceb6d2823d17be2746acd8eb8212
+Description:  Traffic control utility (bpf)
+
+Package: tc-full
+Version: 6.3.0-1
+Depends: libc, kmod-sched-core, libmnl0, libbpf1, libxtables12, tc-mod-iptables
+Provides: tc
+Alternatives: 400:/sbin/tc:/usr/libexec/tc-full
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Architecture: mipsel_24kc
+Installed-Size: 145509
+Filename: tc-full_6.3.0-1_mipsel_24kc.ipk
+Size: 146031
+SHA256sum: fdcd4a634f561450074c1cdf53f9d28bd4e3c71959fe42aa05823cd6c9d21254
+Description:  Traffic control utility (full)
+
+Package: tc-mod-iptables
+Version: 6.3.0-1
+Depends: libc, libxtables12, libbpf1
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Architecture: mipsel_24kc
+Installed-Size: 3182
+Filename: tc-mod-iptables_6.3.0-1_mipsel_24kc.ipk
+Size: 3851
+SHA256sum: fd64b0fd2248bce6d6f6c6c4cb68c14ac478d66c1a758582a849d891fb04ffe8
+Description:  Traffic control module - iptables action
+
+Package: tc-tiny
+Version: 6.3.0-1
+Depends: libc, kmod-sched-core, libmnl0
+Provides: tc
+Alternatives: 200:/sbin/tc:/usr/libexec/tc-tiny
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Architecture: mipsel_24kc
+Installed-Size: 137686
+Filename: tc-tiny_6.3.0-1_mipsel_24kc.ipk
+Size: 138585
+SHA256sum: b62dbb6c84f58663d1874a0eaa8e65f3054718ef46536ff72e4b99d842a4ecd3
+Description:  Traffic control utility (minimal)
+
+Package: ubus
+Version: 2023-06-05-f787c97b-1
+Depends: libc, libubus20230605, libblobmsg-json20230523, ubusd
+License: LGPL-2.1
+Section: base
+Architecture: mipsel_24kc
+Installed-Size: 5839
+Filename: ubus_2023-06-05-f787c97b-1_mipsel_24kc.ipk
+Size: 6444
+SHA256sum: 7131b6968a839f60c6252c4452b9ed851483f265337e7ce9446782078e48088a
+Description:  OpenWrt RPC client utility
+
+Package: ubusd
+Version: 2023-06-05-f787c97b-1
+Depends: libc, libubox20230523, libblobmsg-json20230523
+License: LGPL-2.1
+Section: base
+Architecture: mipsel_24kc
+Installed-Size: 11777
+Filename: ubusd_2023-06-05-f787c97b-1_mipsel_24kc.ipk
+Size: 12362
+SHA256sum: 9f971d037191b002f750666e7989d09556233c4ab7e5ca5c2d4c95f0ddfc544f
+Description:  OpenWrt RPC daemon
+
+Package: uci
+Version: 2023-08-10-5781664d-1
+Depends: libc, libuci20130104
+License: LGPL-2.1
+Section: base
+Architecture: mipsel_24kc
+Installed-Size: 6356
+Filename: uci_2023-08-10-5781664d-1_mipsel_24kc.ipk
+Size: 7107
+SHA256sum: 3f02561366615e2075116c1128a84fcadf34ffc2b39a5b86a2371b52e1939c6c
+Description:  Utility for the Unified Configuration Interface (UCI)
+
+Package: ucode-mod-debug
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, ucode, libubox20230523, libucode20230711
+License: ISC
+Section: lang
+Architecture: mipsel_24kc
+Installed-Size: 7376
+Filename: ucode-mod-debug_2023-11-07-a6e75e02-1_mipsel_24kc.ipk
+Size: 8106
+SHA256sum: 677c2b48bca10a8610c9eb7eca8fd894f63d7df3f061be347f76f3411ddbffe1
+Description:  The debug plugin module provides runtime debugging and introspection facilities.
+
+Package: ucode-mod-fs
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, ucode
+License: ISC
+Section: lang
+Architecture: mipsel_24kc
+Installed-Size: 8182
+Filename: ucode-mod-fs_2023-11-07-a6e75e02-1_mipsel_24kc.ipk
+Size: 8787
+SHA256sum: ce0871148e480cd1b91a60e2001df79b7987955a10c934c6437115f388fb56c1
+Description:  The filesystem plugin module allows interaction with the local file system.
+
+Package: ucode-mod-log
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, ucode, libubox20230523
+License: ISC
+Section: lang
+Architecture: mipsel_24kc
+Installed-Size: 3808
+Filename: ucode-mod-log_2023-11-07-a6e75e02-1_mipsel_24kc.ipk
+Size: 4450
+SHA256sum: 47a0f624d998126fd5ee07cfc06fdba174fe71ec97ce6eec8da96f0a735f5d25
+Description:  The log plugin module provides access to the syslog and libubox ulog APIs.
+
+Package: ucode-mod-math
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, ucode
+License: ISC
+Section: lang
+Architecture: mipsel_24kc
+Installed-Size: 2578
+Filename: ucode-mod-math_2023-11-07-a6e75e02-1_mipsel_24kc.ipk
+Size: 3233
+SHA256sum: 748e7dc03831133b67dbf28d4a2a4137f892a514335d3a30e3f7bcf18d03659f
+Description:  The math plugin provides access to various <math.h> procedures.
+
+Package: ucode-mod-nl80211
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, ucode, libnl-tiny1, libubox20230523
+License: ISC
+Section: lang
+Architecture: mipsel_24kc
+Installed-Size: 18267
+Filename: ucode-mod-nl80211_2023-11-07-a6e75e02-1_mipsel_24kc.ipk
+Size: 18833
+SHA256sum: fb0c5388a98ab267abb307a59869cb40e04dbf2f64b7680d98d67b731050f14c
+Description:  The nl80211 plugin provides access to the Linux wireless 802.11 netlink API.
+
+Package: ucode-mod-resolv
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, ucode
+License: ISC
+Section: lang
+Architecture: mipsel_24kc
+Installed-Size: 7222
+Filename: ucode-mod-resolv_2023-11-07-a6e75e02-1_mipsel_24kc.ipk
+Size: 7904
+SHA256sum: 416395f0f109885dd86e695abbecde4b2911ddc98b7221f720f6df18538a1701
+Description:  The resolv plugin implements simple DNS resolving.
+
+Package: ucode-mod-rtnl
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, ucode, libnl-tiny1, libubox20230523
+License: ISC
+Section: lang
+Architecture: mipsel_24kc
+Installed-Size: 24305
+Filename: ucode-mod-rtnl_2023-11-07-a6e75e02-1_mipsel_24kc.ipk
+Size: 24592
+SHA256sum: ce11f4428f62172f0ea83cdedfef346f032a3999f954298e1124773b7e3af615
+Description:  The rtnl plugin provides access to the Linux routing netlink API.
+
+Package: ucode-mod-struct
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, ucode
+License: ISC
+Section: lang
+Architecture: mipsel_24kc
+Installed-Size: 9307
+Filename: ucode-mod-struct_2023-11-07-a6e75e02-1_mipsel_24kc.ipk
+Size: 10001
+SHA256sum: f93155ff6d6f27428add387dcd13b30346b546c0c20ea8d6686eabb0d5af368d
+Description:  The struct plugin implements Python 3 compatible struct.pack/unpack functionality.
+
+Package: ucode-mod-ubus
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, ucode, libubus20230605, libblobmsg-json20230523
+License: ISC
+Section: lang
+Architecture: mipsel_24kc
+Installed-Size: 12634
+Filename: ucode-mod-ubus_2023-11-07-a6e75e02-1_mipsel_24kc.ipk
+Size: 13286
+SHA256sum: 6542425e8fcea870bd7a73391689ff941ae0b18be6e458c508a4ee2bb77d2aaa
+Description:  The ubus module allows ucode template scripts to enumerate and invoke ubus procedures.
+
+Package: ucode-mod-uci
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, ucode, libuci20130104
+License: ISC
+Section: lang
+Architecture: mipsel_24kc
+Installed-Size: 5863
+Filename: ucode-mod-uci_2023-11-07-a6e75e02-1_mipsel_24kc.ipk
+Size: 6582
+SHA256sum: ccaac068a5e8d80251bf11c57afdea74ee271132dfb65375a47a710b3fe1c493
+Description:  The uci module allows templates to read and modify uci configuration.
+
+Package: ucode-mod-uloop
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, ucode, libubox20230523
+License: ISC
+Section: lang
+Architecture: mipsel_24kc
+Installed-Size: 6760
+Filename: ucode-mod-uloop_2023-11-07-a6e75e02-1_mipsel_24kc.ipk
+Size: 7498
+SHA256sum: 864c97288895bb7438703d00f85f4a170481bceeb43c90b9103b3a5ff9ba03a4
+Description:  The uloop module allows ucode scripts to interact with OpenWrt uloop event loop implementation.
+
+Package: ucode
+Version: 2023-11-07-a6e75e02-1
+Depends: libc, libucode20230711
+License: ISC
+Section: lang
+Architecture: mipsel_24kc
+Installed-Size: 5823
+Filename: ucode_2023-11-07-a6e75e02-1_mipsel_24kc.ipk
+Size: 6550
+SHA256sum: 53f05006c479a1f4a3a5d4a567c44bace09622c36e9c3346fe2cbab8585aa274
+Description:  ucode is a tiny script interpreter featuring an ECMAScript oriented
+ script language and Jinja-inspired templating.
+
 Package: usign
 Version: 2020-05-23-f1f65026-1
 Depends: libc, libubox20230523
@@ -213,4 +805,34 @@ Filename: usign_2020-05-23-f1f65026-1_mipsel_24kc.ipk
 Size: 11960
 SHA256sum: 717217b3090a2dd9f70faf5307fa8b8d4ee1a1d83ff41e93f6cc64566ac36289
 Description:  OpenWrt signature verification utility
+
+Package: zlib-dev
+Version: 1.2.13-1
+Depends: libc, zlib
+License: Zlib
+Section: devel
+CPE-ID: cpe:/a:gnu:zlib
+Architecture: mipsel_24kc
+Installed-Size: 74712
+Filename: zlib-dev_1.2.13-1_mipsel_24kc.ipk
+Size: 75550
+SHA256sum: 2b82b8de28d50aa97de42ce7065a5f54494193c501960b14144efb4c256a3095
+Description:  zlib is a lossless data-compression library.
+ This package includes the development support files.
+
+Package: zlib
+Version: 1.2.13-1
+Depends: libc
+License: Zlib
+Section: libs
+CPE-ID: cpe:/a:gnu:zlib
+Architecture: mipsel_24kc
+Installed-Size: 34637
+Filename: zlib_1.2.13-1_mipsel_24kc.ipk
+Size: 35393
+SHA256sum: b065ba7b47d10e5e56d5c97507a7bddd0795efb67f56f5a44e445ea04676b1a3
+Description:  zlib is a lossless data-compression library.
+ This package includes the shared library.
+
+
 

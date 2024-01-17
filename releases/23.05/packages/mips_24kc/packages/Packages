@@ -26,6 +26,37 @@ Size: 180328
 SHA256sum: d09d53c19f201ea1152a8e209f5a4b2195b261c0d200a7f4dcd18c29a8261368
 Description:  A client-side URL transfer library
 
+Package: libminiupnpc
+Version: 2.2.3-1
+Depends: libc
+License: BSD-3-Clause
+Section: libs
+CPE-ID: cpe:/a:miniupnp_project:miniupnp
+Architecture: mips_24kc
+Installed-Size: 17526
+Filename: libminiupnpc_2.2.3-1_mips_24kc.ipk
+Size: 18153
+SHA256sum: 5930898e248d184f03c6db93daeb012348255081432ee810cc356128ce052c3f
+Description:  Lightweight UPnP library
+
+Package: libnatpmp1
+Version: 20150609-3
+Depends: libc
+Provides: libnatpmp
+License: BSD-3-Clause
+Section: libs
+ABIVersion: 1
+Architecture: mips_24kc
+Installed-Size: 3292
+Filename: libnatpmp1_20150609-3_mips_24kc.ipk
+Size: 4043
+SHA256sum: 854cece16210f0de57ba2e3c001e11e704271fa23b8913c807b3f930bea9d427
+Description:  libnatpmp is an attempt to make a portable and fully compliant implementation
+ of the protocol for the client side. It is based on non blocking sockets and
+ all calls of the API are asynchronous. It is therefore very easy to integrate
+ the NAT-PMP code to any event driven code.
+ This package contains the shared library.
+
 Package: libnghttp2-14
 Version: 1.57.0-1
 Depends: libc
@@ -39,4 +70,45 @@ Filename: libnghttp2-14_1.57.0-1_mips_24kc.ipk
 Size: 56898
 SHA256sum: 7826c2156c612c06a47d2bf06be084d42bc9fd51ee52952e977061123806afaa
 Description:  C library implementing the framing layer of the HTTP/2 protocol. It can be used to build a HTTP/2-capable HTTP client or server
+
+Package: miniupnpc
+Version: 2.2.3-1
+Depends: libc, libminiupnpc
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:miniupnp_project:miniupnp
+Architecture: mips_24kc
+Installed-Size: 10104
+Filename: miniupnpc_2.2.3-1_mips_24kc.ipk
+Size: 10511
+SHA256sum: fe87afdadd458e63875272ee8143952877aa04f97362d04eb86149abf245f38d
+Description:  Lightweight UPnP client
+
+Package: natpmpc
+Version: 20150609-3
+Depends: libc, libnatpmp1
+License: BSD-3-Clause
+Section: net
+Architecture: mips_24kc
+Installed-Size: 3184
+Filename: natpmpc_20150609-3_mips_24kc.ipk
+Size: 3944
+SHA256sum: 656355c6222e0941c2498a81da2eb22e20dae2b332aec1b37ebd3d12eefae0b4
+Description:  libnatpmp is an attempt to make a portable and fully compliant implementation
+ of the protocol for the client side. It is based on non blocking sockets and
+ all calls of the API are asynchronous. It is therefore very easy to integrate
+ the NAT-PMP code to any event driven code.
+ This package contains the natpmp client.
+
+Package: zerotier
+Version: 1.12.2-2
+Depends: libc, libpthread, libstdcpp6, kmod-tun, ip, libminiupnpc, libnatpmp1, libatomic1
+License: BSL 1.1
+Section: net
+Architecture: mips_24kc
+Installed-Size: 499701
+Filename: zerotier_1.12.2-2_mips_24kc.ipk
+Size: 498882
+SHA256sum: 992610d4790c287f745eb71d921c307ec4d8afb6abe9140af08f024a02ec0830
+Description:  ZeroTier creates a global provider-independent virtual private cloud network.
 

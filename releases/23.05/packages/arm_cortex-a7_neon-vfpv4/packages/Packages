@@ -26,6 +26,37 @@ Size: 181212
 SHA256sum: 5dcfdba27b7fc7f5792d547422b1de406f22f4dff2f94c3fc1be4f66d8c3fcd5
 Description:  A client-side URL transfer library
 
+Package: libminiupnpc
+Version: 2.2.3-1
+Depends: libc
+License: BSD-3-Clause
+Section: libs
+CPE-ID: cpe:/a:miniupnp_project:miniupnp
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 19600
+Filename: libminiupnpc_2.2.3-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 20328
+SHA256sum: 2a4210f0cd864eb6fad6a5331a4fd9b776cf153d58f368fdfb2c637390e38b12
+Description:  Lightweight UPnP library
+
+Package: libnatpmp1
+Version: 20150609-3
+Depends: libc
+Provides: libnatpmp
+License: BSD-3-Clause
+Section: libs
+ABIVersion: 1
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 3362
+Filename: libnatpmp1_20150609-3_arm_cortex-a7_neon-vfpv4.ipk
+Size: 4255
+SHA256sum: 59a6ac3a88ee6a21cd49cf5ec626f2a10e2f018b42e9c308832d0b09df2bacf2
+Description:  libnatpmp is an attempt to make a portable and fully compliant implementation
+ of the protocol for the client side. It is based on non blocking sockets and
+ all calls of the API are asynchronous. It is therefore very easy to integrate
+ the NAT-PMP code to any event driven code.
+ This package contains the shared library.
+
 Package: libnghttp2-14
 Version: 1.57.0-1
 Depends: libc
@@ -39,4 +70,45 @@ Filename: libnghttp2-14_1.57.0-1_arm_cortex-a7_neon-vfpv4.ipk
 Size: 61233
 SHA256sum: 602f708d493a4a35e1634d31d22f72cfc31ef844545a039152a301a93fade1fd
 Description:  C library implementing the framing layer of the HTTP/2 protocol. It can be used to build a HTTP/2-capable HTTP client or server
+
+Package: miniupnpc
+Version: 2.2.3-1
+Depends: libc, libminiupnpc
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:miniupnp_project:miniupnp
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 10148
+Filename: miniupnpc_2.2.3-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 10883
+SHA256sum: 9831e27d74685c5538e75ddfffb6b52c7dacb3d747a221a5b4edaf5a6c4cb0be
+Description:  Lightweight UPnP client
+
+Package: natpmpc
+Version: 20150609-3
+Depends: libc, libnatpmp1
+License: BSD-3-Clause
+Section: net
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 3249
+Filename: natpmpc_20150609-3_arm_cortex-a7_neon-vfpv4.ipk
+Size: 4122
+SHA256sum: 770d36d77a087bfd715202b4fb4d2793535da78a8659e162e1f359e2815f3254
+Description:  libnatpmp is an attempt to make a portable and fully compliant implementation
+ of the protocol for the client side. It is based on non blocking sockets and
+ all calls of the API are asynchronous. It is therefore very easy to integrate
+ the NAT-PMP code to any event driven code.
+ This package contains the natpmp client.
+
+Package: zerotier
+Version: 1.12.2-2
+Depends: libc, libpthread, libstdcpp6, kmod-tun, ip, libminiupnpc, libnatpmp1, libatomic1
+License: BSL 1.1
+Section: net
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 522943
+Filename: zerotier_1.12.2-2_arm_cortex-a7_neon-vfpv4.ipk
+Size: 522909
+SHA256sum: 3b86d445af02d59e605dbc0bae0edf1448e0b271881a2f1b13b092caad1b7cfc
+Description:  ZeroTier creates a global provider-independent virtual private cloud network.
 

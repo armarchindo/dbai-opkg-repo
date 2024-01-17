@@ -36,6 +36,45 @@ Size: 205244
 SHA256sum: 9c0c7ca2eb4c6f86436d806a1e6953edf1cb08a57d82775bbe45b3a337604d7e
 Description:  A client-side URL transfer library
 
+Package: libminiupnpc
+Version: 2.2.3-1
+Depends: libc
+Source: feeds/packages/net/miniupnpc
+SourceName: libminiupnpc
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1682110018
+CPE-ID: cpe:/a:miniupnp_project:miniupnp
+Architecture: aarch64_generic
+Installed-Size: 21659
+Filename: libminiupnpc_2.2.3-1_aarch64_generic.ipk
+Size: 22311
+SHA256sum: 43c0b724b458a8837bc5d209720e7d1d610446f31caab80d0a2255398cc5bd54
+Description:  Lightweight UPnP library
+
+Package: libnatpmp1
+Version: 20150609-3
+Depends: libc
+Provides: libnatpmp
+Source: feeds/packages/libs/libnatpmp
+SourceName: libnatpmp
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1623557101
+ABIVersion: 1
+Architecture: aarch64_generic
+Installed-Size: 3785
+Filename: libnatpmp1_20150609-3_aarch64_generic.ipk
+Size: 4538
+SHA256sum: bf7c9e29fc5f39b189d68b22b523f54992e6333809a7dfba9c5a924d3732cbc5
+Description:  libnatpmp is an attempt to make a portable and fully compliant implementation
+ of the protocol for the client side. It is based on non blocking sockets and
+ all calls of the API are asynchronous. It is therefore very easy to integrate
+ the NAT-PMP code to any event driven code.
+ This package contains the shared library.
+
 Package: libnghttp2-14
 Version: 1.57.0-1
 Depends: libc
@@ -54,4 +93,58 @@ Filename: libnghttp2-14_1.57.0-1_aarch64_generic.ipk
 Size: 72126
 SHA256sum: 9dda18cadeaec84db17431f2031c1711434f2048ad1fe70bcf13a875f7e51f8a
 Description:  C library implementing the framing layer of the HTTP/2 protocol. It can be used to build a HTTP/2-capable HTTP client or server
+
+Package: miniupnpc
+Version: 2.2.3-1
+Depends: libc, libminiupnpc
+Source: feeds/packages/net/miniupnpc
+SourceName: miniupnpc
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1682110018
+CPE-ID: cpe:/a:miniupnp_project:miniupnp
+Architecture: aarch64_generic
+Installed-Size: 10755
+Filename: miniupnpc_2.2.3-1_aarch64_generic.ipk
+Size: 11168
+SHA256sum: e33b41b289cdbcf12070096f212a6c851e7fa8d9490f3a2afcaa18ff88826cc8
+Description:  Lightweight UPnP client
+
+Package: natpmpc
+Version: 20150609-3
+Depends: libc, libnatpmp1
+Source: feeds/packages/libs/libnatpmp
+SourceName: natpmpc
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1623557101
+Architecture: aarch64_generic
+Installed-Size: 3697
+Filename: natpmpc_20150609-3_aarch64_generic.ipk
+Size: 4425
+SHA256sum: a87d3c893d69fe7e5a39b31db45c035e7dc2e78b95fb096531a610c527b6616b
+Description:  libnatpmp is an attempt to make a portable and fully compliant implementation
+ of the protocol for the client side. It is based on non blocking sockets and
+ all calls of the API are asynchronous. It is therefore very easy to integrate
+ the NAT-PMP code to any event driven code.
+ This package contains the natpmp client.
+
+Package: zerotier
+Version: 1.12.2-2
+Depends: libc, libpthread, libstdcpp6, kmod-tun, ip, libminiupnpc, libnatpmp1, libatomic1
+Source: feeds/packages/net/zerotier
+SourceName: zerotier
+License: BSL 1.1
+LicenseFiles: LICENSE.txt
+Section: net
+SourceDateEpoch: 1698790750
+Maintainer: Moritz Warning <moritzwarning@web.de>
+Architecture: aarch64_generic
+Installed-Size: 561923
+Filename: zerotier_1.12.2-2_aarch64_generic.ipk
+Size: 561562
+SHA256sum: d4e0ae69c45fd11901c7a938531cae30b99fe94813cabfcb557a13c816873404
+Description:  ZeroTier creates a global provider-independent virtual private cloud network.
 

@@ -1,1 +1,1 @@
-{"architecture": "mipsel_24kc", "packages":{"curl": "8.4.0-2", "libcurl4": "8.4.0-2", "libnghttp2-14": "1.57.0-1"}}
+{"architecture": "mipsel_24kc", "packages":{"curl": "8.4.0-2", "libcurl4": "8.4.0-2", "libminiupnpc": "2.2.3-1", "libnatpmp1": "20150609-3", "libnghttp2-14": "1.57.0-1", "miniupnpc": "2.2.3-1", "natpmpc": "20150609-3", "zerotier": "1.12.2-2"}}
