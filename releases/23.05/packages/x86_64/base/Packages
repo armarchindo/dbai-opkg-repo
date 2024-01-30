@@ -118,15 +118,15 @@ SHA256sum: 603a99f54ae49d9e20c5b3b9a0c06ceaac7e9feb9112abf2ccfc16e9957eb0b8
 Description:  Library for parsing and generating JSON from shell scripts
 
 Package: jsonfilter
-Version: 2018-02-04-c7e938d6-1
+Version: 2024-01-23-594cfa86-1
 Depends: libc, libubox20230523, libjson-c5
 License: ISC
 Section: base
 Architecture: x86_64
-Installed-Size: 9719
-Filename: jsonfilter_2018-02-04-c7e938d6-1_x86_64.ipk
-Size: 10489
-SHA256sum: 5fda10cb1f63eda2ddf496ad907f579eee7ec64f6401a6ab54b25fc27d9fe8bd
+Installed-Size: 9728
+Filename: jsonfilter_2024-01-23-594cfa86-1_x86_64.ipk
+Size: 10488
+SHA256sum: 5f65ba556b6adafc08ee69a16294afb4150996fa16ba9cde0b392e145f9e5211
 Description:  OpenWrt JSON filter utility
 
 Package: libasm1
@@ -267,7 +267,7 @@ Description:  Lua is a powerful light-weight programming language designed for e
  This package contains the Lua shared libraries, needed by other programs.
 
 Package: libmbedtls12
-Version: 2.28.5-2
+Version: 2.28.7-2
 Depends: libc
 Provides: libmbedtls
 License: GPL-2.0-or-later
@@ -275,10 +275,10 @@ Section: libs
 ABIVersion: 12
 CPE-ID: cpe:/a:arm:mbed_tls
 Architecture: x86_64
-Installed-Size: 240921
-Filename: libmbedtls12_2.28.5-2_x86_64.ipk
-Size: 241706
-SHA256sum: a9d4ca584d6db713eecdaa360b8dc58c2682c226195a7255aeaf08a2aa3c88ed
+Installed-Size: 241234
+Filename: libmbedtls12_2.28.7-2_x86_64.ipk
+Size: 242020
+SHA256sum: 880742e0906cebf7fb9b2318f9cba2bac22633dc7baac17e7514ee0c3991cc74
 Description:  The aim of the mbedtls project is to provide a quality, open-source
  cryptographic library written in C and targeted at embedded systems.
  This package contains the mbedtls library.
@@ -489,16 +489,16 @@ Description:  Lua is a powerful light-weight programming language designed for e
  This package contains the Lua language compiler.
 
 Package: mbedtls-util
-Version: 2.28.5-2
+Version: 2.28.7-2
 Depends: libc, libmbedtls12
 License: GPL-2.0-or-later
 Section: utils
 CPE-ID: cpe:/a:arm:mbed_tls
 Architecture: x86_64
-Installed-Size: 31495
-Filename: mbedtls-util_2.28.5-2_x86_64.ipk
-Size: 32377
-SHA256sum: 6656b831c5344bf38a00e73b9e47523dc8fd2735bcd30f301def2dc9be40b775
+Installed-Size: 31490
+Filename: mbedtls-util_2.28.7-2_x86_64.ipk
+Size: 32361
+SHA256sum: c39d482e3034617f2a963fa27e73558c4845a3bc66203ee04447a82d4e9acf8f
 Description:  The aim of the mbedtls project is to provide a quality, open-source
  cryptographic library written in C and targeted at embedded systems.
  This package contains mbedtls helper programs for private key and

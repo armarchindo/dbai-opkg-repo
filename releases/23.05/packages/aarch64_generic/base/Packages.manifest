@@ -153,19 +153,19 @@ SHA256sum: 398c0dd6b3762d2c43428b2db6a5c4c701906022cc6d3648013cecdc17da6e97
 Description:  Library for parsing and generating JSON from shell scripts
 
 Package: jsonfilter
-Version: 2018-02-04-c7e938d6-1
+Version: 2024-01-23-594cfa86-1
 Depends: libc, libubox20230523, libjson-c5
 Source: feeds/base/package/utils/jsonfilter
 SourceName: jsonfilter
 License: ISC
 Section: base
-SourceDateEpoch: 1645878990
+SourceDateEpoch: 1705997385
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Architecture: aarch64_generic
-Installed-Size: 10465
-Filename: jsonfilter_2018-02-04-c7e938d6-1_aarch64_generic.ipk
-Size: 11054
-SHA256sum: 5402e327a5038455254a72883ce1a50579d6abf40fa16ec9afc8175466cfaaf9
+Installed-Size: 10473
+Filename: jsonfilter_2024-01-23-594cfa86-1_aarch64_generic.ipk
+Size: 11097
+SHA256sum: fee2b5405142ce6dfc1ac99a7a4038890f46fc0027733ddefe81180bdbef0a41
 Description:  OpenWrt JSON filter utility
 
 Package: libasm1
@@ -348,7 +348,7 @@ Description:  Lua is a powerful light-weight programming language designed for e
  This package contains the Lua shared libraries, needed by other programs.
 
 Package: libmbedtls12
-Version: 2.28.5-2
+Version: 2.28.7-2
 Depends: libc
 Provides: libmbedtls
 Source: feeds/base/package/libs/mbedtls
@@ -356,14 +356,14 @@ SourceName: libmbedtls
 License: GPL-2.0-or-later
 LicenseFiles: gpl-2.0.txt
 Section: libs
-SourceDateEpoch: 1699313840
+SourceDateEpoch: 1706521279
 ABIVersion: 12
 CPE-ID: cpe:/a:arm:mbed_tls
 Architecture: aarch64_generic
-Installed-Size: 252618
-Filename: libmbedtls12_2.28.5-2_aarch64_generic.ipk
-Size: 253150
-SHA256sum: 44fe7156e09b262d1e0662459eed654da8b97bdf6b9e6cac349082a66f37141a
+Installed-Size: 253017
+Filename: libmbedtls12_2.28.7-2_aarch64_generic.ipk
+Size: 253533
+SHA256sum: f004295320f0737e7eb59b44e20318dc48082d8c128894a0d49d6e58abb9986f
 Description:  The aim of the mbedtls project is to provide a quality, open-source
  cryptographic library written in C and targeted at embedded systems.
  This package contains the mbedtls library.
@@ -630,20 +630,20 @@ Description:  Lua is a powerful light-weight programming language designed for e
  This package contains the Lua language compiler.
 
 Package: mbedtls-util
-Version: 2.28.5-2
+Version: 2.28.7-2
 Depends: libc, libmbedtls12
 Source: feeds/base/package/libs/mbedtls
 SourceName: mbedtls-util
 License: GPL-2.0-or-later
 LicenseFiles: gpl-2.0.txt
 Section: utils
-SourceDateEpoch: 1699313840
+SourceDateEpoch: 1706521279
 CPE-ID: cpe:/a:arm:mbed_tls
 Architecture: aarch64_generic
-Installed-Size: 33389
-Filename: mbedtls-util_2.28.5-2_aarch64_generic.ipk
-Size: 34075
-SHA256sum: 0612a0f201fc87d2fb03030a7e94069e6a82c63f287014c9155883793ae86f60
+Installed-Size: 33394
+Filename: mbedtls-util_2.28.7-2_aarch64_generic.ipk
+Size: 34095
+SHA256sum: 161592fceb96411c0f95f2585c5ea3344c6d88e6519ce0c08de9a031c181a127
 Description:  The aim of the mbedtls project is to provide a quality, open-source
  cryptographic library written in C and targeted at embedded systems.
  This package contains mbedtls helper programs for private key and

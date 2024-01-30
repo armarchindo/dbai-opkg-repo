@@ -16,6 +16,18 @@ Description:  Contains the command-line client for Cloudflare Tunnel, a tunnelin
  via this daemon, without requiring you to poke holes on your firewall
  --- your origin can remain as closed as possible.
 
+Package: luci-app-appstatus
+Version: 1.1
+Depends: libc
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 1638
+Filename: luci-app-appstatus_1.1_all.ipk
+Size: 2469
+SHA256sum: f7b8c06a0e94e8d362a1aedc6d9617abe71732f894b4a8fe148889a2490836e4
+Description:  Shows status application information in Overview LuCI.
+
 Package: luci-app-cloudflared
 Version: 1.1
 Depends: libc, cloudflared

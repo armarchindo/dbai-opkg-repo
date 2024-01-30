@@ -32,8 +32,8 @@ Maintainer: Stan Grishin <stangri@melmac.ca>
 Architecture: mips_24kc
 Installed-Size: 180184
 Filename: libcurl4_8.4.0-2_mips_24kc.ipk
-Size: 180328
-SHA256sum: d09d53c19f201ea1152a8e209f5a4b2195b261c0d200a7f4dcd18c29a8261368
+Size: 180331
+SHA256sum: 53639c79eafb93214a403a3d9205ac1bfe2c12672c28211d3fb36553b647af3c
 Description:  A client-side URL transfer library
 
 Package: libminiupnpc

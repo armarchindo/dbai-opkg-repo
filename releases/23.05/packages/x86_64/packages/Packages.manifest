@@ -32,8 +32,8 @@ Maintainer: Stan Grishin <stangri@melmac.ca>
 Architecture: x86_64
 Installed-Size: 195686
 Filename: libcurl4_8.4.0-2_x86_64.ipk
-Size: 196429
-SHA256sum: a0570e84655e2d26e026f043acfa8a2462de73db43ba8e8b0983a5352298789b
+Size: 196420
+SHA256sum: 26da523412ff8dc75d43f83e86f6757b790392dc66866985a6f62295dafce932
 Description:  A client-side URL transfer library
 
 Package: libminiupnpc

@@ -32,8 +32,8 @@ Maintainer: Stan Grishin <stangri@melmac.ca>
 Architecture: aarch64_cortex-a53
 Installed-Size: 204323
 Filename: libcurl4_8.4.0-2_aarch64_cortex-a53.ipk
-Size: 204933
-SHA256sum: 4b0247ae09c05609492f61e492399a27da03f921227f82f3ef66e0597c6d8762
+Size: 204940
+SHA256sum: b662158b7c1dc75c50754bf0c19a817e5b5a9721f7dda0149159140d726e2b8f
 Description:  A client-side URL transfer library
 
 Package: libminiupnpc

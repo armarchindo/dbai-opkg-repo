@@ -30,10 +30,10 @@ ABIVersion: 4
 CPE-ID: cpe:/a:haxx:libcurl
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Architecture: mipsel_24kc
-Installed-Size: 179501
+Installed-Size: 179502
 Filename: libcurl4_8.4.0-2_mipsel_24kc.ipk
-Size: 179776
-SHA256sum: eb9fbda07424d97a9df674b910295cb85f841776f5f54e0ba2152e4cf5a844bb
+Size: 179781
+SHA256sum: 955de04edc85ca068dcf0924e6682644da73a9f240d22a98202db9dcb4b96426
 Description:  A client-side URL transfer library
 
 Package: libminiupnpc

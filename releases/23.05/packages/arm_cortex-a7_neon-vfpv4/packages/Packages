@@ -23,7 +23,7 @@ Architecture: arm_cortex-a7_neon-vfpv4
 Installed-Size: 180712
 Filename: libcurl4_8.4.0-2_arm_cortex-a7_neon-vfpv4.ipk
 Size: 181212
-SHA256sum: 5dcfdba27b7fc7f5792d547422b1de406f22f4dff2f94c3fc1be4f66d8c3fcd5
+SHA256sum: 686269b4be65b59d79bdcf85623d3fd0969d2d6ca0566b9743d539c75af0b7be
 Description:  A client-side URL transfer library
 
 Package: libminiupnpc

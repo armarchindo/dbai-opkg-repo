@@ -22,8 +22,8 @@ CPE-ID: cpe:/a:haxx:libcurl
 Architecture: aarch64_generic
 Installed-Size: 204660
 Filename: libcurl4_8.4.0-2_aarch64_generic.ipk
-Size: 205244
-SHA256sum: 9c0c7ca2eb4c6f86436d806a1e6953edf1cb08a57d82775bbe45b3a337604d7e
+Size: 205245
+SHA256sum: 1ee9e84198a85e15693366fafe5b7b566e633bbf9a7078304319317ce15d0607
 Description:  A client-side URL transfer library
 
 Package: libminiupnpc

@@ -22,8 +22,8 @@ CPE-ID: cpe:/a:haxx:libcurl
 Architecture: aarch64_cortex-a72
 Installed-Size: 204660
 Filename: libcurl4_8.4.0-2_aarch64_cortex-a72.ipk
-Size: 205252
-SHA256sum: 15e7115a008b75f21a7b3080521bb6ef4648233a724e0304c7bab46c11735e4f
+Size: 205251
+SHA256sum: 788811205ae048258abef1c6a7b43cd609c89e68e03e8b26a24d12d5f3e1ed47
 Description:  A client-side URL transfer library
 
 Package: libminiupnpc

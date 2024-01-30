@@ -118,15 +118,15 @@ SHA256sum: da606e4b01578d3c413191a23d03ce474875217b88d7c8f84aaec624bab3dce0
 Description:  Library for parsing and generating JSON from shell scripts
 
 Package: jsonfilter
-Version: 2018-02-04-c7e938d6-1
+Version: 2024-01-23-594cfa86-1
 Depends: libc, libubox20230523, libjson-c5
 License: ISC
 Section: base
 Architecture: arm_cortex-a7_neon-vfpv4
-Installed-Size: 9151
-Filename: jsonfilter_2018-02-04-c7e938d6-1_arm_cortex-a7_neon-vfpv4.ipk
-Size: 9905
-SHA256sum: c7266c80ca42563f54d9de548638a2a6725e18d7ef8fdba91159a4819b6c858e
+Installed-Size: 9156
+Filename: jsonfilter_2024-01-23-594cfa86-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 9912
+SHA256sum: 88198f5c48a8ecbf21088ae03b2e461507041dc480de7ba6eab49fc41439db3d
 Description:  OpenWrt JSON filter utility
 
 Package: libasm1
@@ -267,7 +267,7 @@ Description:  Lua is a powerful light-weight programming language designed for e
  This package contains the Lua shared libraries, needed by other programs.
 
 Package: libmbedtls12
-Version: 2.28.5-2
+Version: 2.28.7-2
 Depends: libc
 Provides: libmbedtls
 License: GPL-2.0-or-later
@@ -275,10 +275,10 @@ Section: libs
 ABIVersion: 12
 CPE-ID: cpe:/a:arm:mbed_tls
 Architecture: arm_cortex-a7_neon-vfpv4
-Installed-Size: 202147
-Filename: libmbedtls12_2.28.5-2_arm_cortex-a7_neon-vfpv4.ipk
-Size: 202770
-SHA256sum: 779b9c5729f9387258204dcaff2f3c53846732699dfc98b95a3d915512223865
+Installed-Size: 202263
+Filename: libmbedtls12_2.28.7-2_arm_cortex-a7_neon-vfpv4.ipk
+Size: 202824
+SHA256sum: ef88355f44d78736347bcccd40661b787a8107aa91e5cae8c170acc5558daf79
 Description:  The aim of the mbedtls project is to provide a quality, open-source
  cryptographic library written in C and targeted at embedded systems.
  This package contains the mbedtls library.
@@ -489,16 +489,16 @@ Description:  Lua is a powerful light-weight programming language designed for e
  This package contains the Lua language compiler.
 
 Package: mbedtls-util
-Version: 2.28.5-2
+Version: 2.28.7-2
 Depends: libc, libmbedtls12
 License: GPL-2.0-or-later
 Section: utils
 CPE-ID: cpe:/a:arm:mbed_tls
 Architecture: arm_cortex-a7_neon-vfpv4
-Installed-Size: 31915
-Filename: mbedtls-util_2.28.5-2_arm_cortex-a7_neon-vfpv4.ipk
-Size: 32808
-SHA256sum: f6652b3a91a371741e8a2d61d4caea2837208044a3a6e66cd28a1efba7b36bee
+Installed-Size: 31920
+Filename: mbedtls-util_2.28.7-2_arm_cortex-a7_neon-vfpv4.ipk
+Size: 32850
+SHA256sum: 8481fae295404facda38aa9c769c10a945bcdbb7a30485bf6d20bd4e019573c6
 Description:  The aim of the mbedtls project is to provide a quality, open-source
  cryptographic library written in C and targeted at embedded systems.
  This package contains mbedtls helper programs for private key and

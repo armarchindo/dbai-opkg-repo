@@ -118,15 +118,15 @@ SHA256sum: 4a610806afcf78793ddca0a0010fdeca65ac83948be1d2979743390a887c3e32
 Description:  Library for parsing and generating JSON from shell scripts
 
 Package: jsonfilter
-Version: 2018-02-04-c7e938d6-1
+Version: 2024-01-23-594cfa86-1
 Depends: libc, libubox20230523, libjson-c5
 License: ISC
 Section: base
 Architecture: aarch64_cortex-a72
-Installed-Size: 10465
-Filename: jsonfilter_2018-02-04-c7e938d6-1_aarch64_cortex-a72.ipk
-Size: 11061
-SHA256sum: e91a791ec2857ad1755b2805803f09257b9de580d840076da9749f5f77b2e740
+Installed-Size: 10473
+Filename: jsonfilter_2024-01-23-594cfa86-1_aarch64_cortex-a72.ipk
+Size: 11106
+SHA256sum: 43abca37a09bfffa9e59c55929f8f897509d554b98cef6c2ca6d9fbde9196b8b
 Description:  OpenWrt JSON filter utility
 
 Package: libasm1
@@ -267,7 +267,7 @@ Description:  Lua is a powerful light-weight programming language designed for e
  This package contains the Lua shared libraries, needed by other programs.
 
 Package: libmbedtls12
-Version: 2.28.5-2
+Version: 2.28.7-2
 Depends: libc
 Provides: libmbedtls
 License: GPL-2.0-or-later
@@ -275,10 +275,10 @@ Section: libs
 ABIVersion: 12
 CPE-ID: cpe:/a:arm:mbed_tls
 Architecture: aarch64_cortex-a72
-Installed-Size: 252618
-Filename: libmbedtls12_2.28.5-2_aarch64_cortex-a72.ipk
-Size: 253153
-SHA256sum: 74be1857fd8b22eb3ccaa1090ee1840f8307c82f4c086409482718e7801966ae
+Installed-Size: 253017
+Filename: libmbedtls12_2.28.7-2_aarch64_cortex-a72.ipk
+Size: 253535
+SHA256sum: f9a75affdada9be53b84caa04ee799dac95dbfff22f3029966a4ff06620ed59e
 Description:  The aim of the mbedtls project is to provide a quality, open-source
  cryptographic library written in C and targeted at embedded systems.
  This package contains the mbedtls library.
@@ -489,16 +489,16 @@ Description:  Lua is a powerful light-weight programming language designed for e
  This package contains the Lua language compiler.
 
 Package: mbedtls-util
-Version: 2.28.5-2
+Version: 2.28.7-2
 Depends: libc, libmbedtls12
 License: GPL-2.0-or-later
 Section: utils
 CPE-ID: cpe:/a:arm:mbed_tls
 Architecture: aarch64_cortex-a72
-Installed-Size: 33389
-Filename: mbedtls-util_2.28.5-2_aarch64_cortex-a72.ipk
-Size: 34082
-SHA256sum: 849f4131baa1e27350d3a059f6adddbac873722d4fad4dfc9052b6f4759d3f2e
+Installed-Size: 33394
+Filename: mbedtls-util_2.28.7-2_aarch64_cortex-a72.ipk
+Size: 34098
+SHA256sum: f096c702080f9582b1f035e580419aff06c8e50b1615a91766e22cacb3dd8a41
 Description:  The aim of the mbedtls project is to provide a quality, open-source
  cryptographic library written in C and targeted at embedded systems.
  This package contains mbedtls helper programs for private key and
