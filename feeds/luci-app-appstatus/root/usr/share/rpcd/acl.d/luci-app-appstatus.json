@@ -1,0 +1,14 @@
+{
+	"luci-app-appstatus": {
+		"description": "Grant access to luci-app-appstatus",
+		"read": {
+			"file": {
+				"/bin/ash": [ "exec" ]
+			},
+			"uci": [ "appstatus" ]
+		},
+		"write": {
+			"uci": [ "appstatus" ]
+		}
+	}
+}

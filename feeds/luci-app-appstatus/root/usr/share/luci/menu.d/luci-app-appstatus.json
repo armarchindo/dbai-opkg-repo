@@ -1,0 +1,13 @@
+{
+	"admin/services/appstatus": {
+		"title": "Application Status",
+		"order": 11,
+		"action": {
+			"type": "view",
+			"path": "appstatus"
+		},
+		"depends": {
+			"acl": [ "luci-app-appstatus" ]
+		}
+	}
+}
