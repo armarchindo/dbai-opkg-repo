@@ -1,0 +1,6 @@
+
+config appstatus 'config'
+	option cloudflared '1'
+	option dockerd '1'
+	option samba4 '1'
+	option zerotier '1'
